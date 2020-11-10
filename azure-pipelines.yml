@@ -33,3 +33,10 @@ steps:
 - task: SonarCloudPublish@1
   inputs:
     pollingTimeoutSec: '300'
+
+- task: Docker@2
+  inputs:
+    containerRegistry: 'docker-registry'
+    repository: 'aarondownward/azure-app'
+    command: 'buildAndPush'
+    Dockerfile: 'application/Dockerfile'
