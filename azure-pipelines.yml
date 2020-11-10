@@ -40,3 +40,13 @@ steps:
     repository: 'aarondownward/azure-app'
     command: 'buildAndPush'
     Dockerfile: 'application/Dockerfile'
+
+- task: Kubernetes@1
+  inputs:
+    connectionType: 'Kubernetes Service Connection'
+    kubernetesServiceEndpoint: 'azure-cluster'
+    namespace: 'default'
+    command: 'apply'
+    arguments: '-f kube/'
+    secretType: 'dockerRegistry'
+    containerRegistryType: 'Azure Container Registry'
