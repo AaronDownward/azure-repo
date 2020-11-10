@@ -9,12 +9,12 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
     <!-- <exec.mainClass>project1.reesebenson.Watch</exec.mainClass> -->
     <exec.mainClass>sample1.App</exec.mainClass>
-    <sonar.projectKey>revature-devops-prep-2020_aaron-challenge3fromscratch</sonar.projectKey>
-    <sonar.organization>revature-devops-prep-2020</sonar.organization>
+    <sonar.projectKey>AaronDownward_azure-repo</sonar.projectKey>
+    <sonar.organization>aarondownward</sonar.organization>
     <sonar.host.url>https://sonarcloud.io</sonar.host.url>
   </properties>
 
